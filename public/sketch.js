@@ -4,7 +4,7 @@ if ('geolocation' in navigator) {
   console.log('geolocation available');
   navigator.geolocation.getCurrentPosition(async position => {
     let lat, lon, weather;
-    
+    try {
       lat = position.coords.latitude;
       lon = position.coords.longitude;
       document.getElementById('latitude').textContent = lat.toFixed(2);
@@ -17,11 +17,14 @@ if ('geolocation' in navigator) {
       document.getElementById('temp').textContent = weather.temp;
       document.getElementById('windspeed').textContent = weather.windspeed;
       document.getElementById('feels-like').textContent = weather.feelslike;
-    
+    } catch (error){
+      console.error(error);
+    }
     // add button click event
     const checkinBtn = document.getElementById('checkin-button');
     checkinBtn.addEventListener( 'click', async function() {
-    // this posts data to the database
+    checkinBtn.textContent = "checked in!";
+      // this posts data to the database
     const data = { lat, lon, weather };
     const options = {
       method: 'POST',

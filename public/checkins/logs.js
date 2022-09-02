@@ -1,5 +1,5 @@
 // create a map with leaflet
-const mymap = L.map('checkinMap').setView([0, 0], 1);
+const mymap = L.map('checkinMap').setView([0, 0], 2);
 const attribution =
   '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors';
 //const tileUrl = 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png';

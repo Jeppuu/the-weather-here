@@ -1,0 +1,54 @@
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    max-width: fit-content;
+    margin: auto;
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+h1 {
+    font: 'roboto';
+    font-size: '48';
+}
+.nav-bar {
+  display: inline-block;
+  margin: 10px 4px;
+  padding: 5px;
+}
+a {
+  margin: 10px 4px;
+  padding: 5px;
+  color: white;
+}
+a:link {
+    text-decoration: none;
+  }
+  
+  a:visited {
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  a:active {
+    text-decoration: underline;
+  }
+p {
+    margin: 8px;
+    padding: 5px;
+
+}
+
+#checkin-button {
+    background-color: rgb(248, 233, 26);
+    color: black;
+    border: none;
+    margin: 10%;
+    font-size: 26px;
+    border-radius: 100%;
+    padding: 120px;
+    text-decoration: none;
+    cursor: pointer;
+}

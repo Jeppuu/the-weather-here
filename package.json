@@ -1,0 +1,22 @@
+{
+  "name": "node-test",
+  "version": "1.0.0",
+  "description": "Trying out the weather here app by Joey Lee with a tutorial by thecodingtrain",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "test",
+    "data",
+    "weather"
+  ],
+  "author": "Jeppu",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "nedb": "^1.8.0",
+    "node-fetch": "^3.2.10"
+  }
+}
